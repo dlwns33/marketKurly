@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToBuyViewController" customModule="Kurly_MOCK" customModuleProvider="target">
+            <connections>
+                <outlet property="productName" destination="o93-yC-fX3" id="fEI-Uo-Nxo"/>
+                <outlet property="productPrice" destination="EUM-YH-s1Q" id="t3x-yH-HbY"/>
+                <outlet property="stepper" destination="KqX-EE-rEo" id="JEx-DC-8Oa"/>
+                <outlet property="steps" destination="iiQ-BU-oG0" id="mfh-jg-jwl"/>
+                <outlet property="toBasket" destination="Xzy-iF-7Yx" id="F1r-WI-R94"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[회사명] 제품명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o93-yC-fX3">
+                    <rect key="frame" x="20" y="108" width="105" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUM-YH-s1Q">
+                    <rect key="frame" x="20" y="164" width="57" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzy-iF-7Yx">
+                    <rect key="frame" x="20" y="812" width="374" height="50"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wYe-cI-TSb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="장바구니 담기">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="intoBasket:" destination="-1" eventType="touchUpInside" id="CjP-Yw-Qq4"/>
+                    </connections>
+                </button>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="KqX-EE-rEo">
+                    <rect key="frame" x="300" y="143" width="94" height="32"/>
+                    <connections>
+                        <action selector="stepperValueChanged:" destination="-1" eventType="valueChanged" id="5YQ-fR-bNA"/>
+                    </connections>
+                </stepper>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiQ-BU-oG0">
+                    <rect key="frame" x="279" y="149" width="11" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KqX-EE-rEo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="55" id="3s1-7e-FAa"/>
+                <constraint firstItem="iiQ-BU-oG0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="61" id="Acm-OS-V39"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xzy-iF-7Yx" secondAttribute="trailing" constant="20" id="DHh-gW-0ey"/>
+                <constraint firstItem="o93-yC-fX3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Dhg-Tj-nwM"/>
+                <constraint firstItem="KqX-EE-rEo" firstAttribute="leading" secondItem="iiQ-BU-oG0" secondAttribute="trailing" constant="10" id="TV2-RU-Cv5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KqX-EE-rEo" secondAttribute="trailing" constant="20" id="YZs-i6-uZk"/>
+                <constraint firstItem="Xzy-iF-7Yx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="csK-qw-HWv"/>
+                <constraint firstItem="EUM-YH-s1Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dzE-qc-DN6"/>
+                <constraint firstItem="Xzy-iF-7Yx" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="g53-22-rCB"/>
+                <constraint firstItem="EUM-YH-s1Q" firstAttribute="top" secondItem="o93-yC-fX3" secondAttribute="bottom" constant="35" id="nX7-YR-qsq"/>
+                <constraint firstItem="o93-yC-fX3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="nZZ-nh-VsP"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+            <point key="canvasLocation" x="-146" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

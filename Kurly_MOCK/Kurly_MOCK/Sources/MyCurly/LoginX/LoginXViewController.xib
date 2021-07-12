@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginXViewController" customModule="Kurly_MOCK" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_login" destination="o0k-o7-gWb" id="VI0-cM-WFy"/>
+                <outlet property="tableView" destination="CAv-6q-Fng" id="KeN-9e-gn4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5u4-HS-2AO">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qje-U2-Owp">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PF-Gw-exF">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원 가입하고" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-rs-RA0">
+                                            <rect key="frame" x="152.5" y="40" width="109" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다양한 혜택을 받아보세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-gJ-eht">
+                                            <rect key="frame" x="104.5" y="68" width="205.5" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0k-o7-gWb">
+                                            <rect key="frame" x="15" y="160" width="384" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="f15-lc-UEc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <state key="normal" title="로그인/회원가입">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="login:" destination="-1" eventType="touchUpInside" id="kYs-0J-CjF"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vS8-cy-yEz">
+                                            <rect key="frame" x="156" y="102" width="102.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="가입 혜택 보기 " image="chevron.right" catalog="system">
+                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="o0k-o7-gWb" firstAttribute="centerX" secondItem="9PF-Gw-exF" secondAttribute="centerX" id="69A-6R-tm6"/>
+                                        <constraint firstItem="PfX-gJ-eht" firstAttribute="top" secondItem="kk1-rs-RA0" secondAttribute="bottom" constant="4" id="EGR-PR-aOx"/>
+                                        <constraint firstItem="vS8-cy-yEz" firstAttribute="centerX" secondItem="9PF-Gw-exF" secondAttribute="centerX" id="PrW-6t-DcM"/>
+                                        <constraint firstItem="o0k-o7-gWb" firstAttribute="leading" secondItem="9PF-Gw-exF" secondAttribute="leading" constant="15" id="SKs-Dy-tM6"/>
+                                        <constraint firstItem="kk1-rs-RA0" firstAttribute="centerX" secondItem="9PF-Gw-exF" secondAttribute="centerX" id="Sbx-04-RPV"/>
+                                        <constraint firstItem="PfX-gJ-eht" firstAttribute="centerX" secondItem="9PF-Gw-exF" secondAttribute="centerX" id="Unw-Ad-tD2"/>
+                                        <constraint firstAttribute="bottom" secondItem="o0k-o7-gWb" secondAttribute="bottom" constant="40" id="bIn-o4-2bP"/>
+                                        <constraint firstAttribute="height" constant="250" id="fVe-4J-bBf"/>
+                                        <constraint firstItem="kk1-rs-RA0" firstAttribute="top" secondItem="9PF-Gw-exF" secondAttribute="top" constant="40" id="jOD-hS-WvP"/>
+                                        <constraint firstItem="vS8-cy-yEz" firstAttribute="top" secondItem="PfX-gJ-eht" secondAttribute="bottom" constant="10" id="rK0-57-MSa"/>
+                                        <constraint firstAttribute="trailing" secondItem="o0k-o7-gWb" secondAttribute="trailing" constant="15" id="w3h-pP-H6p"/>
+                                    </constraints>
+                                </view>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CAv-6q-Fng">
+                                    <rect key="frame" x="0.0" y="270" width="414" height="528"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstItem="9PF-Gw-exF" firstAttribute="top" secondItem="qje-U2-Owp" secondAttribute="top" id="1gg-Ec-Do6"/>
+                                <constraint firstItem="9PF-Gw-exF" firstAttribute="leading" secondItem="qje-U2-Owp" secondAttribute="leading" id="Jcx-Fv-PlC"/>
+                                <constraint firstItem="CAv-6q-Fng" firstAttribute="top" secondItem="9PF-Gw-exF" secondAttribute="bottom" constant="20" id="NMg-kY-a8H"/>
+                                <constraint firstItem="CAv-6q-Fng" firstAttribute="leading" secondItem="qje-U2-Owp" secondAttribute="leading" id="NlY-xH-fiN"/>
+                                <constraint firstAttribute="trailing" secondItem="9PF-Gw-exF" secondAttribute="trailing" id="RRu-Xp-xGv"/>
+                                <constraint firstAttribute="trailing" secondItem="CAv-6q-Fng" secondAttribute="trailing" id="lv0-Ex-0Vv"/>
+                                <constraint firstAttribute="bottom" secondItem="CAv-6q-Fng" secondAttribute="bottom" constant="20" id="vPD-a9-gGo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qje-U2-Owp" secondAttribute="trailing" id="F1E-6E-w4y"/>
+                        <constraint firstItem="qje-U2-Owp" firstAttribute="leading" secondItem="5u4-HS-2AO" secondAttribute="leading" id="Umn-S9-Wta"/>
+                        <constraint firstItem="qje-U2-Owp" firstAttribute="top" secondItem="5u4-HS-2AO" secondAttribute="top" id="jT1-5o-vg7"/>
+                        <constraint firstAttribute="bottom" secondItem="qje-U2-Owp" secondAttribute="bottom" id="qgH-La-lHy"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5u4-HS-2AO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="69f-YJ-eLv"/>
+                <constraint firstItem="5u4-HS-2AO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7PU-L3-vBX"/>
+                <constraint firstItem="5u4-HS-2AO" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8Wb-fO-xRG"/>
+                <constraint firstItem="5u4-HS-2AO" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="HkG-Ru-vUi"/>
+                <constraint firstItem="qje-U2-Owp" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="aaG-PU-MpF"/>
+                <constraint firstItem="qje-U2-Owp" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.912946" id="zGk-4a-rbb"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+            <point key="canvasLocation" x="-39.130434782608695" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

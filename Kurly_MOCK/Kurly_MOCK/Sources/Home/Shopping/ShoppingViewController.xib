@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShoppingViewController" customModule="Kurly_MOCK" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Agk-BQ-Gsn" id="Ix3-od-fq5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="알뜰쇼핑광고" translatesAutoresizingMaskIntoConstraints="NO" id="uRB-wj-a2K">
+                    <rect key="frame" x="0.0" y="138" width="414" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="9HH-dI-z6L"/>
+                        <constraint firstAttribute="width" constant="414" id="oab-JC-1Bn"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-BQ-Gsn">
+                    <rect key="frame" x="17" y="338" width="380" height="558"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="380" id="Jhc-ev-UqW"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="APp-Lx-ZUl">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-7O-gcN">
+                    <rect key="frame" x="331" y="306" width="66" height="22"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="혜택순" image="chevron.down" catalog="system">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FdW-7O-gcN" secondAttribute="trailing" constant="17" id="CwO-JY-ZnY"/>
+                <constraint firstItem="uRB-wj-a2K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="DFJ-Mt-iDV"/>
+                <constraint firstItem="uRB-wj-a2K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EAO-Mm-Yqe"/>
+                <constraint firstItem="Agk-BQ-Gsn" firstAttribute="top" secondItem="FdW-7O-gcN" secondAttribute="bottom" constant="10" id="U0b-So-FP6"/>
+                <constraint firstItem="Agk-BQ-Gsn" firstAttribute="top" secondItem="uRB-wj-a2K" secondAttribute="bottom" constant="70" id="VQX-xI-gHd"/>
+                <constraint firstItem="uRB-wj-a2K" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="upZ-g9-nfQ"/>
+                <constraint firstItem="Agk-BQ-Gsn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vji-sa-WM1"/>
+                <constraint firstAttribute="bottom" secondItem="Agk-BQ-Gsn" secondAttribute="bottom" id="wwZ-8s-hoJ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="알뜰쇼핑광고" width="1125" height="361"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

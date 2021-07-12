@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier=" CategoryTableViewCell" rowHeight="50" id="KGk-i7-Jjw" customClass="CategoryTableViewCell" customModule="Kurly_MOCK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TV0-Rc-Cjc">
+                        <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="3Zm-Wt-B5x"/>
+                            <constraint firstAttribute="width" constant="50" id="zdI-Xz-XM9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채소" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntu-I1-dcg">
+                        <rect key="frame" x="80" y="5" width="33" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgP-7f-g6c">
+                        <rect key="frame" x="365" y="18" width="19" height="22"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="chevron.down" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ntu-I1-dcg" firstAttribute="leading" secondItem="TV0-Rc-Cjc" secondAttribute="trailing" constant="10" id="3Fi-uW-W6M"/>
+                    <constraint firstItem="MgP-7f-g6c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="GaN-Td-bIz"/>
+                    <constraint firstItem="TV0-Rc-Cjc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Nfb-Er-Kqn"/>
+                    <constraint firstAttribute="trailing" secondItem="MgP-7f-g6c" secondAttribute="trailing" constant="20" id="Plb-LW-IKV"/>
+                    <constraint firstAttribute="bottom" secondItem="TV0-Rc-Cjc" secondAttribute="bottom" constant="10" id="Qbc-wd-IB7"/>
+                    <constraint firstAttribute="bottom" secondItem="MgP-7f-g6c" secondAttribute="bottom" constant="19" id="b12-E2-ckk"/>
+                    <constraint firstAttribute="bottom" secondItem="Ntu-I1-dcg" secondAttribute="bottom" constant="13" id="hRi-qo-o6j"/>
+                    <constraint firstItem="TV0-Rc-Cjc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="s3Q-i4-kZ5"/>
+                    <constraint firstItem="Ntu-I1-dcg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="sFt-pT-kqZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="MgP-7f-g6c" id="wgY-i1-BZj"/>
+                <outlet property="icon" destination="TV0-Rc-Cjc" id="a08-by-d30"/>
+                <outlet property="title" destination="Ntu-I1-dcg" id="AYP-yj-4aH"/>
+            </connections>
+            <point key="canvasLocation" x="317.39130434782612" y="90.401785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+    </resources>
+</document>

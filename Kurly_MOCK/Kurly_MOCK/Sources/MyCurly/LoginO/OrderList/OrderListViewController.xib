@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderListViewController" customModule="Kurly_MOCK" customModuleProvider="target">
+            <connections>
+                <outlet property="allAgain" destination="BN3-Dx-KkE" id="le2-Ox-7HX"/>
+                <outlet property="tableView" destination="7Fh-Zf-uHm" id="iAd-nP-Tsl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Fh-Zf-uHm">
+                    <rect key="frame" x="0.0" y="209" width="414" height="653"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문번호 1616329955484" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys7-Yz-Q4q">
+                    <rect key="frame" x="20" y="108" width="198" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN3-Dx-KkE">
+                    <rect key="frame" x="15" y="149" width="384" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="tgh-SZ-3lL"/>
+                    </constraints>
+                    <state key="normal" title="전체 상품 다시 담기">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ys7-Yz-Q4q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="44e-7z-wbb"/>
+                <constraint firstItem="ys7-Yz-Q4q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="C8F-cR-Jch"/>
+                <constraint firstItem="7Fh-Zf-uHm" firstAttribute="top" secondItem="BN3-Dx-KkE" secondAttribute="bottom" constant="10" id="FPc-6u-4U2"/>
+                <constraint firstItem="7Fh-Zf-uHm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kp3-9e-Whj"/>
+                <constraint firstItem="7Fh-Zf-uHm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="USX-D1-5bf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BN3-Dx-KkE" secondAttribute="trailing" constant="15" id="bMP-em-hX2"/>
+                <constraint firstItem="BN3-Dx-KkE" firstAttribute="top" secondItem="ys7-Yz-Q4q" secondAttribute="bottom" constant="20" id="bw1-Bo-nsA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7Fh-Zf-uHm" secondAttribute="bottom" id="q1m-qJ-ftX"/>
+                <constraint firstItem="BN3-Dx-KkE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="v1J-e4-Aii"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+            <point key="canvasLocation" x="131.8840579710145" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

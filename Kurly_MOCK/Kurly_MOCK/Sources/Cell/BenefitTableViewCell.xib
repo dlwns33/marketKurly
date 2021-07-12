@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="BenefitTableViewCell" customModule="Kurly_MOCK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Glo-ju-OML">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FmD-8i-t4M">
+                                <rect key="frame" x="0.0" y="0.0" width="410" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="410" id="UuL-kM-C4T"/>
+                                    <constraint firstAttribute="height" constant="140" id="kQa-SV-JgL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FmD-8i-t4M" firstAttribute="top" secondItem="Glo-ju-OML" secondAttribute="top" id="0Wf-4f-tFI"/>
+                            <constraint firstAttribute="trailing" secondItem="FmD-8i-t4M" secondAttribute="trailing" id="VaW-03-Uzk"/>
+                            <constraint firstAttribute="width" constant="410" id="b22-jN-wB6"/>
+                            <constraint firstItem="FmD-8i-t4M" firstAttribute="leading" secondItem="Glo-ju-OML" secondAttribute="leading" id="rl4-Y7-ubm"/>
+                            <constraint firstAttribute="height" constant="180" id="wEu-XS-w5Q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Glo-ju-OML" secondAttribute="trailing" id="8Wb-20-YGt"/>
+                    <constraint firstAttribute="bottom" secondItem="Glo-ju-OML" secondAttribute="bottom" id="9BS-dw-KnF"/>
+                    <constraint firstItem="Glo-ju-OML" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9jT-ku-bS3"/>
+                    <constraint firstItem="Glo-ju-OML" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Owz-EQ-XPp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ad" destination="FmD-8i-t4M" id="jiJ-6o-BrF"/>
+            </connections>
+            <point key="canvasLocation" x="-178.98550724637681" y="115.84821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

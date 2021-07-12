@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Kurly_MOCK" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHn-bn-HFf">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coi-da-o0G">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOF-fz-UdH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                                    <subviews>
+                                        <searchBar contentMode="redraw" placeholder="예) 판교역로 235, 분당 주공, 삼평동 681" translatesAutoresizingMaskIntoConstraints="NO" id="lYw-GY-c1U">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </searchBar>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="lYw-GY-c1U" firstAttribute="top" secondItem="XOF-fz-UdH" secondAttribute="top" id="43L-GT-5f7"/>
+                                        <constraint firstAttribute="height" constant="500" id="9aM-ud-AHX"/>
+                                        <constraint firstAttribute="trailing" secondItem="lYw-GY-c1U" secondAttribute="trailing" id="Ph8-a4-FXS"/>
+                                        <constraint firstItem="lYw-GY-c1U" firstAttribute="leading" secondItem="XOF-fz-UdH" secondAttribute="leading" id="xym-je-fcW"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="XOF-fz-UdH" secondAttribute="trailing" id="9sJ-8m-FZa"/>
+                                <constraint firstItem="XOF-fz-UdH" firstAttribute="top" secondItem="coi-da-o0G" secondAttribute="top" id="TiZ-Mx-NUt"/>
+                                <constraint firstItem="XOF-fz-UdH" firstAttribute="leading" secondItem="coi-da-o0G" secondAttribute="leading" id="jkG-ul-faP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="coi-da-o0G" secondAttribute="trailing" id="1fK-qg-dNc"/>
+                        <constraint firstAttribute="bottom" secondItem="coi-da-o0G" secondAttribute="bottom" id="Hbl-nZ-nMC"/>
+                        <constraint firstItem="coi-da-o0G" firstAttribute="leading" secondItem="gHn-bn-HFf" secondAttribute="leading" id="NNe-5E-S3x"/>
+                        <constraint firstItem="coi-da-o0G" firstAttribute="top" secondItem="gHn-bn-HFf" secondAttribute="top" id="zf6-6y-zwJ"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gHn-bn-HFf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1Vk-pM-SVJ"/>
+                <constraint firstItem="coi-da-o0G" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.901786" id="BeP-oa-QHm"/>
+                <constraint firstItem="coi-da-o0G" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="hNS-t5-lew"/>
+                <constraint firstItem="gHn-bn-HFf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kP3-xK-24H"/>
+                <constraint firstItem="gHn-bn-HFf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="q2e-60-tnp"/>
+                <constraint firstAttribute="bottom" secondItem="gHn-bn-HFf" secondAttribute="bottom" id="z6H-N8-Gbb"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+            <point key="canvasLocation" x="-52.173913043478265" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
